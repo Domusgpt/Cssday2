@@ -1,6 +1,6 @@
 [build]
-  publish = "."  # ✅ Changed from "public"
-  command = "echo 'No build needed'"
+  publish = "."  # Deploy directly from the root directory
+  # Remove the "command" line entirely
 
 [[headers]]
   for = "/*"

@@ -1,8 +1,8 @@
 import { gsap } from 'https://cdn.skypack.dev/gsap';
 import { ScrollTrigger } from 'https://cdn.skypack.dev/gsap/ScrollTrigger';
-import { QuantumParticles } from './particles.js';
-import { ColorHarmonyEngine } from './color-inheritance.js';
-import { WormholeEngine } from './wormholes.js';
+import { QuantumParticles } from './public/scripts/particles.js';
+import { ColorHarmonyEngine } from './puclic/scripts/color-inheritance.js';
+import { WormholeEngine } from './public/scripts/wormholes.js';
 
 export class TransitionEngine {
   constructor() {

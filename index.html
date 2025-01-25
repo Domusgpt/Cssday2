@@ -16,8 +16,9 @@
                    img-src 'self' data:;
                    connect-src 'self';
                    object-src 'none'">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animations.css">  
+<link rel="stylesheet" href="public/style/main.css">
+<link rel="stylesheet" href="public/style/animations.css
+import { TransitionEngine } from './scripts/transitions.js';
 </head>
 <body>
     <div class="crt-overlay" data-intensity="0.75"></div>
@@ -47,7 +48,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     
     <script type="module">
-        import { TransitionEngine } from './scripts/transitions.js';
+        import { TransitionEngine } from './public/scripts/transitions.js';
         document.addEventListener('DOMContentLoaded', () => {
             new TransitionEngine().init();
         });

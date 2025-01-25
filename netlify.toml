@@ -1,6 +1,6 @@
 [build]
-  publish = "."  # Deploy from root directory
-  # No build command needed
+  publish = "."  # ✅ Deploy from root directory
+  command = "echo 'No build needed'"
 
 [[headers]]
   for = "/*"

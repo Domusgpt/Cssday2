@@ -23,6 +23,16 @@ export class QuantumParticles {
     this.originalPositions = new Float32Array(
       this.particleGeometry.attributes.position.array
     );
+
+    // Resize handler setup
+    window.addEventListener('resize', () => this.handleResize());
+    this.handleResize();
+  }
+
+  handleResize() {
+    this.camera.aspect = window.innerWidth / window.innerHeight;
+    this.camera.updateProjectionMatrix();
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
   }
 
   createGeometry() {

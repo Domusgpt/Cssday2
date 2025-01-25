@@ -1,4 +1,5 @@
 import * as THREE from 'https://cdn.skypack.dev/three@0.136.0';
+import { gsap } from 'https://cdn.skypack.dev/gsap';
 
 export class WormholeEngine {
   constructor(scene) {
@@ -33,7 +34,9 @@ export class WormholeEngine {
       color: 0xFFFFFF,
       blending: THREE.AdditiveBlending,
       transparent: true,
-      opacity: 0
+      opacity: 0,
+      depthTest: false,
+      depthWrite: false
     });
 
     this.vortex = new THREE.Points(geometry, material);

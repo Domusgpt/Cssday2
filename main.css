@@ -7,7 +7,7 @@
         var(--primary) 0%, 
         var(--accent) 70%, 
         transparent 100%);
-    --parallax-base-z: -50px;
+    --parallax-base-z: -150px;
 }
 
 /* ======= Quantum Parallax System ======= */
@@ -45,10 +45,11 @@
             rgba(var(--accent), 0.1) 50%, 
             transparent 100%);
     transform: 
-        translateZ(calc(var(--parallax-base-z) * 1)) 
+        translateZ(calc(var(--parallax-base-z) * 3)) 
         scale(1.2)
         rotateX(5deg);
     filter: blur(0.5px);
+    z-index: 5;
 }
 
 /* Layer 2: Nebula Mesh */
@@ -62,10 +63,11 @@
             rgba(var(--primary-rgb), 0.12) 0%, 
             transparent 70%);
     transform: 
-        translateZ(calc(var(--parallax-base-z) * 2)) 
+        translateZ(calc(var(--parallax-base-z) * 6)) 
         scale(1.4)
         rotateY(-3deg);
     filter: blur(1px);
+    z-index: 4;
 }
 
 /* Layer 3: Stellar Dust */
@@ -79,11 +81,12 @@
             rgba(var(--accent), 0.05) 0px 2px, 
             transparent 2px 4px);
     transform: 
-        translateZ(calc(var(--parallax-base-z) * 3)) 
+        translateZ(calc(var(--parallax-base-z) * 9)) 
         scale(1.6)
         rotateX(-2deg)
         rotateY(2deg);
     filter: blur(1.5px);
+    z-index: 3;
 }
 
 /* Layer 4: Warp Field */
@@ -98,10 +101,11 @@
             transparent 20%, 
             rgba(var(--accent), 0.05) 40%);
     transform: 
-        translateZ(calc(var(--parallax-base-z) * 4)) 
+        translateZ(calc(var(--parallax-base-z) * 12)) 
         scale(1.8)
         rotateZ(1.5deg);
     filter: blur(2px);
+    z-index: 2;
 }
 
 /* Layer 5: Event Horizon */
@@ -115,11 +119,12 @@
             rgba(var(--accent), 0.03) 0px 2px, 
             transparent 2px 4px);
     transform: 
-        translateZ(calc(var(--parallax-base-z) * 5)) 
+        translateZ(calc(var(--parallax-base-z) * 15)) 
         scale(2.0)
         rotateX(1deg)
         rotateY(-1deg);
     filter: blur(3px);
+    z-index: 1;
 }
 
 @media (max-width: 768px) {

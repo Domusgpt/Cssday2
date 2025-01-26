@@ -1,7 +1,6 @@
 [build]
-  publish = "."  # Deploy from root directory
-  # No build command needed
-
+  [build]
+publish = "public"
 [[headers]]
   for = "/*"
   [headers.values]
